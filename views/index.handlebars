@@ -1,21 +1,52 @@
-<nav id="navbar">
-    <div class="nav-wrapper">
-        <a href="#!" class="brand-logo center">Fetch</a>
-        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-        <ul id="right-nav" class="right hide-on-med-and-down">
-            <li><a href="sass.html">Sass</a></li>
-            <li><a href="badges.html">Components</a></li>
-        </ul>
-        <ul id="left-nav" class="left hide-on-med-and-down">
-            <li><a href="sass.html">Sass</a></li>
-            <li><a href="badges.html">Components</a></li>
-        </ul>
+<div class="row justify-content-center">
+    <div class="col-sm-12 col-md-9 col-lg-6">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Create your Fetch Profile</h5>
+                <form>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="inputFirstName4">First Name</label>
+                            <input type="firstName" class="form-control" id="firstName" placeholder="ex. Scoobert">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="inputLastName4">Last Name</label>
+                            <input type="lastName" class="form-control" id="lastName" placeholder="ex. Doo">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-4">
+                            <label for="inputBreed">Breed</label>
+                            <input type="text" class="form-control" id="breed" placeholder="ex. Great Dane">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="inputAge">Age</label>
+                            <input type="text" class="form-control" id="age" placeholder="ex. 2 years">
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label for="inputGender">Gender</label>
+                            <select id="gender" class="form-control">
+                                <option selected>Choose</option>
+                                <option value="female">Female</option>
+                                <option value="male">Male</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label for="inputFixed">Fixed?</label>
+                            <select id="fixed" class="form-control">
+                                <option selected>Choose</option>
+                                <option value="1">Yes</option>
+                                <option value="0">No</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Interests:</label>
+                        <textarea class="form-control" id="interests" rows="3"></textarea>
+                    </div>
+                    <button id="button" type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
     </div>
-</nav>
-
-<ul class="sidenav" id="mobile-demo">
-    <li><a href="sass.html">Sass</a></li>
-    <li><a href="badges.html">Components</a></li>
-    <li><a href="collapsible.html">Javascript</a></li>
-    <li><a href="mobile.html">Mobile</a></li>
-</ul>
+</div>
