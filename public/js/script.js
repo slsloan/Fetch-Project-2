@@ -19,9 +19,9 @@ $(function () {
             $("#lastName").val("")
             $("#breed").val("")
             $("#age").val("")
-            $("gender").val("")
-            $("fixed").val("")
-            $("interests").val("")
+            $("#gender").val("")
+            $("#fixed").val("")
+            $("#interests").val("")
 
             // navigate to "/dogs"
             window.location.href = "/dogs"
@@ -40,8 +40,8 @@ $(function () {
                 console.log(dog)
                 // destructure dog
                 const {
-                    firstName,
-                    lastName,
+                    first_name,
+                    last_name,
                     breed,
                     age,
                     gender,
@@ -54,7 +54,7 @@ $(function () {
                     <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
                         <div class="card">
                             <div class="card-body">
-                                <h5 class="card-title">${firstName, lastName}</h5>
+                                <h5 class="card-title">${first_name}, ${last_name}</h5>
                                 <p class="card-text">${breed}</p>
                                 <p class="card-text">${age}</p>
                                 <p class="card-text">${gender}</p>
@@ -75,49 +75,49 @@ $(function () {
     // handle change event for my first name input
     $("#firstName").on("change", event => {
         // destructure event
-        const firstName = event.target.value
+        first_name = event.target.value
 
-        console.log(firstName)
+        console.log(first_name)
     })
     // handle change event for my last name input
     $("#lastName").on("change", event => {
         // destructure event
-        const lastName = event.target.value
+        last_name = event.target.value
 
-        console.log(lastName)
+        console.log(last_name)
     })
     // handle change event for my breed input
     $("#breed").on("change", event => {
         // destructure event
-        const breed = event.target.value
+        breed = event.target.value
 
         console.log(breed)
     })
     // handle change event for my age input
     $("#age").on("change", event => {
         // destructure event
-        const age = event.target.value
+        age = event.target.value
 
         console.log(age)
     })
     // handle change event for my gender input
-    $("gender").on("change", event => {
+    $("#gender").on("change", event => {
         // destructure event
-        const gender = event.target.value
+        gender = event.target.value
 
         console.log(gender)
     })
     // handle change event for my fixed input
-    $("fixed").on("change", event => {
+    $("#fixed").on("change", event => {
         // destructure event
-        const fixed = event.target.value
+        fixed = event.target.value
 
         console.log(fixed)
     })
     // handle change event for my interests input
-    $("interests").on("change", event => {
+    $("#interests").on("change", event => {
         // destructure event
-        const interests = event.target.value
+        interests = event.target.value
 
         console.log(interests)
     })

@@ -6,7 +6,7 @@ module.exports = function (sequelize, DataTypes) {
         breed: DataTypes.STRING,
         gender: DataTypes.STRING,
         age: DataTypes.STRING,
-        fixed: DataTypes.BOOLEAN,
+        fixed: DataTypes.STRING,
         // location: DataTypes.INTEGER,
         interests: DataTypes.TEXT
     });
