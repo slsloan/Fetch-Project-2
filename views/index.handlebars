@@ -1,0 +1,114 @@
+<div class="background">
+    <div class="row">
+        <div class="col m4">
+            <img id="logo" src="./css/fetch_logo2.png" width="180" height="90" alt="logo for fetch">
+        </div>
+
+
+        <div class="row form slide-in">
+            <div class="col m6 offset-m6">
+                <div class="card">
+                    <div class="card-content">
+                        <span class="card-title">Create your Fetch Profile!</span>
+                        <form>
+                            <div class="row">
+                                <div class="input-field col s6">
+                                    <input placeholder="Scooby" id="firstName" name="dog_name" type="text"
+                                        class="validate">
+                                    <label for="dog_name">Dog's First Name</label>
+                                </div>
+                                <div class="input-field col s6">
+                                    <input placeholder="Doo" id="lastName" name="dog_last_name" type="text"
+                                        class="validate">
+                                    <label for="dog_last_name">Dog's Last Name</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col m4 s6">
+                                    <input placeholder="Great Dane" id="breed" type="text" class="validate">
+                                    <label for="dog_breed">Dog's Breed</label>
+                                </div>
+                                <div class="input-field col m4 s6">
+                                    <select id="age">
+                                        <option value="" disabled selected></option>
+                                        <option value="Puppy">Puppy</option>
+                                        <option value="Young Adult">Young Adult</option>
+                                        <option value="Adult">Adult</option>
+                                        <option value="Senior">Senior</option>
+                                    </select>
+                                    <label>Age</label>
+                                </div>
+                                <div class="input-field col m2 s6">
+                                    <select id="gender">
+                                        <option value="" disabled selected></option>
+                                        <option value="Male">Male</option>
+                                        <option value="Female">Female</option>
+                                    </select>
+                                    <label>Gender</label>
+                                </div>
+                                <div class="input-field col m2 s6">
+                                    <select id="fixed">
+                                        <option value="" disabled selected></option>
+                                        <option value="1">Yes</option>
+                                        <option value="0">No</option>
+
+                                    </select>
+                                    <label>Fixed?</label>
+                                </div>
+                            </div>
+                            <div class="row" style="margin: 0px;">
+                                <div class="input-field col s12">
+                                    <input placeholder="ex. Enjoys long walks on the beach" id="interests" type="text"
+                                        class="validate">
+                                    <label for="dog_interests">Interests:</label>
+                                </div>
+                            </div>
+                            <div class="row valign-wrapper" style="margin-bottom: 10px; margin-left: 10px;">
+                                <p>Upload a profile pic for your dog:</p>
+                                <div class="col s6">
+                                    <a class="waves-effect waves-light" id="uploadImage"
+                                        style="width: 80px; height: 80px;">
+                                        <div class="image-cropper">
+                                            <img id="profilePreview" alt="profilePreview" class="circle responsive-img"
+                                                src="https://cdn.filestackcontent.com/UVLL8jDSPGfGTEHWfq7z">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="card-action">
+                                    <div class="col s6">
+                                        <button id="button" class="btn yellow-button waves-effect waves-light btn-large"
+                                            type="submit" name="action">Submit
+                                            <i class="material-icons right">send</i>
+                                        </button>
+                                    </div>
+                                    <div class="col s6">
+                                        <button type="button" id="map-btn"
+                                            class="btn yellow-button waves-effect waves-light btn-large right">New
+                                            Location
+                                            <i class="material-icons right">add_location</i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="map-modal">
+        <div class="modal-content">
+            <div style="height: 50vh;" id="inputMap"></div>
+        </div>
+
+        <div id="modal-footer ">
+            <a href="#!" class="modal-close waves-effect waves-yellow btn-flat">Close</a>
+
+        </div>
+
+    </div>
+
+    <script src="./js/index.js"></script>

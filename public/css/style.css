@@ -1,0 +1,91 @@
+body{
+  overflow: hidden;
+}
+.slide-in{
+animation: slide-in 1.5s;
+}
+
+.slide-out{
+  animation: slide-in 1.5s;
+  animation-fill-mode: forwards;
+  animation-direction: reverse;
+  }
+@keyframes slide-in{
+from{
+  transform:translateX(100%)
+}
+to{
+  transform:translateX(0%)
+
+}
+
+
+}
+.background {
+  background-image: url('background.jpg');
+  background-position: 50% 20%;
+	background-repeat:  no-repeat;
+	background-attachment: fixed;
+	background-size:  cover;
+  background-color: #999;
+  height:100vh;
+}
+
+#map{
+height: 60vh;
+
+}
+
+#profile >.row{
+  width: 33vw;
+text-align: center;
+margin-top: -5em;
+}
+
+.background2 {
+  background-image: url('background2.jpg');
+  background-position: 50% 20%;
+	background-repeat:  no-repeat;
+	background-attachment: fixed;
+	background-size:  cover;
+  background-color: #999;
+  height:100vh;
+}
+
+#map{
+  height: 60vh;
+}
+  
+#profile >.row {
+    width: 40vw;
+}
+
+#logo {
+  margin-top: 2px;
+}
+
+.yellow-button {
+  background-color: #f2c33d!important;
+  margin-left: -25px;
+  margin-bottom: -10px;
+}
+
+#cur_dog_name, .dog-title {
+  color: #f2c33d!important;
+}
+
+#cur_dog_name {
+  font-size: 40px;
+  font-weight: bold;
+  margin: 15px;
+}
+
+#map-back {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#mapBackBtn {
+  background-color: #f2c33d;
+  margin: 15px;
+}

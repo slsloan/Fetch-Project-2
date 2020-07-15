@@ -1,0 +1,80 @@
+<div class="background2">
+
+    <div class="row">
+        <a href="/">
+            <img id="logo" src="./css/fetch_logo2.png" width="180" height="90" alt="logo for fetch">
+        </a>
+    </div>
+    <div class="row slide-in">
+        <ul class="tabs" style="display:none">
+            <li class="tab col s3"><a class="active" href="#map-tab">Test 2</a></li>
+            <li class="tab col s3"><a href="#profile">Test 1</a></li>
+        </ul>
+        <div id="map-tab" class="row ">
+
+            <div class="col s12 m6 offset-s0 offset-l3">
+
+                <div class="card-panel">
+
+                    <div id="map"></div>
+                </div>
+
+            </div>
+        </div>
+        <div id="profile">
+
+            <div class="row">
+                <div class="col s12">
+                    <div class="card">
+                        <span id="cur_dog_name" style="text-transform: capitalize" class="card-title">Card
+                            Title</span><br>
+                        <img id="cur_image" width="300px" height="300px">
+                        <div class="card-content">
+                            <div class="card_info">
+
+                                <div>
+                                    <strong>Breed:</strong>
+                                    <span id="cur_breed"> </span>
+
+                                </div>
+
+                                <div>
+                                    <strong>Gender:</strong>
+                                    <span id="cur_gender"> </span>
+
+                                </div>
+
+                                <div>
+                                    <strong>Age:</strong>
+                                    <span id="cur_age"> </span>
+
+                                </div>
+
+                                <div>
+                                    <strong>Fixed:</strong>
+                                    <span id="cur_fixed"> </span>
+                                </div>
+
+                                <div>
+                                    <strong>Bio:</strong>
+                                    <span id="cur_interests"> </span>
+
+                                </div>
+
+                            </div>
+                            <div id="map-back">
+                                <a id="mapBackBtn" class="waves-effect waves-light btn-large" href="#">Back to Map</a>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+</div>
+<script src="./js/dogs.js"></script>
